@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dojonary</title>
+</head>
+<body>
+    <div id="top-content">
+        <div id="search-bar">
+            <h1 id="bar-title">Dojonary</h1>
+            <input type="text" placeholder="Search" id="search">
+            <button id="loginbtn" onclick="logOut(this)">Login</button>
+        </div>
+    </div>
+    <div id="content">
+        <div id="main-content">
+            <div class="term" id="first-term">
+                <div class="left-side">
+                    <div class="ls-sub">
+                        <h2>ninja</h2>
+                        <p class="noun">noun</p>
+                        <p class="plural">Plural: ninjas</p>
+                    </div>
+                    <button class="like-btn" onclick="alert('Ninja was liked')">13 likes</button>
+                </div>
+                <div class="meaning">
+                    <p>A practitioner skilled in the <a href="#">Japanese</a> art 
+                    of <a href="#">Ninjutsu</a></p>
+                </div>
+            </div>
+            <div class="term" id="second-term">
+                <div class="left-side">
+                    <div class="ls-sub">
+                        <h2>ninja</h2>
+                        <p class="noun">noun</p>
+                        <p class="plural">Plural: ninjas</p>
+                    </div>
+                    <button class="like-btn" onclick="alert('Ninja was liked')">37 likes</button>
+                </div>
+                <div class="meaning">
+                    <p>A <a href="#">programmer</a>  who breaks down problems with 
+                    <a href="#">zen</a>-like focus</p>
+                </div>
+            </div>
+        </div>
+        <div id="side-content">
+            <div id="sd-text">
+            <p>Dojonary is defined by <b>YOU</b></p>
+            </div>
+            <button id="add-definition" onclick="removeElement(this)">Add Definition</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
